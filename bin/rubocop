@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Employ rubocop's autocorrect to quickly fix rubocop errors
+
+# Example:
+#  docker run --rm mycargus/testrunner-base-ruby rubocop
+
+set -e
+
+bundle exec rubocop --auto-correct --fail-level autocorrect

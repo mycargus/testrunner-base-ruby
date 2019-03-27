@@ -1,0 +1,56 @@
+---
+Rails:
+  Enabled: false
+
+AllCops:
+  TargetRubyVersion: 2.6
+
+Metrics/ClassLength:
+  Max: 100
+
+Metrics/LineLength:
+  Max: 100
+
+Metrics/ModuleLength:
+  Max: 100
+
+Metrics/MethodLength:
+  Max: 10
+
+Metrics/BlockLength:
+  Max: 30
+  Exclude:
+    - 'spec/**/*.rb'
+
+Layout/AlignParameters:
+  # Alignment of parameters in multi-line method calls.
+  #
+  # The `with_fixed_indentation` style aligns the following lines with one
+  # level of indentation relative to the start of the line with the method call.
+  #
+  #     method_call(a,
+  #       b)
+  EnforcedStyle: with_fixed_indentation
+
+Layout/CaseIndentation:
+  EnforcedStyle: end
+
+Style/Documentation:
+  # This cop checks for missing top-level documentation of classes and modules.
+  # Classes with no body and namespace modules are exempt from the check.
+  # Namespace modules are modules that have nothing in their bodies except
+  # classes or other modules.
+  Enabled: false
+
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: variable
+
+Style/FrozenStringLiteralComment:
+  # See: https://wyeworks.com/blog/2015/12/1/immutable-strings-in-ruby-2-dot-3
+  EnforcedStyle: when_needed
+
+Naming/PredicateName:
+  # Normally this rule makes sense but given this is a repo of test cases
+  # we can reasonably use has_ methods in order to take advantage of rspec
+  # expectation helpers
+  Enabled: false
