@@ -20,3 +20,5 @@ COPY --chown=docker:docker Gemfile Gemfile.lock ./
 RUN bundle install --quiet --jobs 8
 
 COPY --chown=docker:docker . ./
+
+CMD bundle exec rspec

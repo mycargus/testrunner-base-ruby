@@ -151,8 +151,7 @@ docker build . -t mycargus/testrunner-base-ruby:latest
 ## Run this project's tests
 
 ```sh
-docker run --rm -it -v "$PWD:/usr/src/app" \
-  mycargus/testrunner-base-ruby:latest test
+docker run --rm -it -v "$PWD:/usr/src/app" mycargus/testrunner-base-ruby:latest
 ```
 
 # License
