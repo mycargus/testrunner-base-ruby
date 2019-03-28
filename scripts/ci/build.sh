@@ -22,4 +22,9 @@ function cleanup()
 trap cleanup INT TERM EXIT
 
 docker build --pull . -t testrunner
+
+# lint
+docker run --rm -it testrunner rubocop
+
+# test
 docker run --rm -it testrunner
