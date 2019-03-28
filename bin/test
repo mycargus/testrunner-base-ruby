@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# Run this project's test suite.
+#
+# Example:
+#  docker run --rm -it mycargus/testrunner-base-ruby test path/to/spec.rb
+#
+# Or run all the tests:
+#
+# docker run --rm -it mycargus/testrunner-base-ruby test
+
+set -e
+
+bundle exec rspec "$@"
