@@ -21,5 +21,5 @@ function cleanup()
 
 trap cleanup INT TERM EXIT
 
-docker build . -t testrunner
+docker build --pull . -t testrunner
 docker run --rm -it testrunner
