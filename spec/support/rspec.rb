@@ -47,7 +47,7 @@ RSpec.configure do |config|
   #
   # let(:http_config) { <config> }
   #
-  [:contract, :scenario].each do |type|
+  %i[contract scenario].each do |type|
     config.around(:each, type: type) do |example|
       configure_http_requests(http_config: http_config) { example.run }
     end
