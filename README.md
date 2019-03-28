@@ -12,13 +12,13 @@ create a flexible, shareable tool here. :)
 To run your specs in parallel:
 
 ```sh
-docker run --rm mycargus/testrunner-base-ruby bundle exec rspec-queue spec
+docker run --rm -it mycargus/testrunner-base-ruby bundle exec rspec-queue spec
 ```
 
 To run the tests in sequence:
 
 ```sh
-docker run --rm mycargus/testrunner-base-ruby bundle exec rspec spec
+docker run --rm -it mycargus/testrunner-base-ruby bundle exec rspec spec
 ```
 
 ### wait-for
@@ -151,7 +151,8 @@ docker build . -t mycargus/testrunner-base-ruby:latest
 ## Run this project's tests
 
 ```sh
-docker run --rm -v "$PWD:/usr/src/app" mycargus/testrunner-base-ruby:latest test
+docker run --rm -it -v "$PWD:/usr/src/app" \
+  mycargus/testrunner-base-ruby:latest test
 ```
 
 # License

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module ContractTestHelper
+module HttpTestHelper
   def configure_http_requests(config_driver: Airborne.configuration, http_config: {})
     raise ArgumentError unless block_given?
 

@@ -4,5 +4,5 @@
 
 Airborne.configure do |config|
   config.base_url = nil
-  config.include ContractTestHelpers
+  config.include HttpTestHelper
 end
