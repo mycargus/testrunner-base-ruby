@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mycargus/testrunner-base-ruby.svg?branch=master)](https://travis-ci.org/mycargus/testrunner-base-ruby)
+
 # testrunner-base-ruby
 
 A basic Ruby + Rspec testrunner docker image that holds common infrastructure I
