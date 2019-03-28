@@ -3,6 +3,6 @@
 # https://github.com/brooklynDev/airborne#configuration
 
 Airborne.configure do |config|
-  config.base_url = nil
+  config.base_url = 'http://example.com"'
   config.include HttpTestHelper
 end
