@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/mycargus/testrunner-base-ruby.svg?branch=master)](https://travis-ci.org/mycargus/testrunner-base-ruby)
+[![Build Status](https://travis-ci.com/mycargus/testrunner-base-ruby.svg?branch=master)](https://travis-ci.org/mycargus/testrunner-base-ruby)
 
 # testrunner-base-ruby
 
