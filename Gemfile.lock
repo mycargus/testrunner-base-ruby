@@ -47,7 +47,7 @@ GEM
     pry-state (0.1.10)
       pry (>= 0.9.10, < 0.12.0)
     psych (3.1.0)
-    rack (2.2.6.3)
+    rack (2.2.6.4)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rainbow (3.0.0)
